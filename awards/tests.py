@@ -43,3 +43,6 @@ class RatingTestClass(TestCase):
         self.rate1.delete_rating()
         deleted_rates = Rating.objects.all()
         self.assertTrue(len(deleted_rates)==0)
+
+class MoreTestsAreComing(TestCase):
+    pass
