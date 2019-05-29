@@ -20,7 +20,7 @@ NO known Bugs.
 
 | Behaviour| Input | Output |
 | ------------- | ----------------- | ------------------ |
-| Display all applications on database  | "https://app-name@tuzo.com"   | Loads all applications  |
+| Display all applications on database  | "https://tuzo@heroku.com"   | Loads all applications  |
 | Review live site | click on review button | Takes you to site on deployment platform |
 | Rate a project| Ratings |  Displays ratings and mean rate |
 | Update projects as user | update or allows user to post a new project | Posts |
