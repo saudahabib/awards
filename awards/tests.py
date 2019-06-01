@@ -44,5 +44,22 @@ class RatingTestClass(TestCase):
         deleted_rates = Rating.objects.all()
         self.assertTrue(len(deleted_rates)==0)
 
-class MoreTestsAreComing(TestCase):
-    pass
+class ProjectTestClass(TestCase):
+    def setUp(self):
+        '''Creating all other models for testing'''
+        self.prof1 = Profile(
+        user_id=5,
+        username='codignoramus',
+        email='saudababs00@gmail.com')
+        self.prof1.save()
+
+        self.rate1 = Rating(design_rate=8, usability_rate=6, content=5)
+        self.rate1.save()
+
+        self.proj1 = Project(title= 'sololo', landing_page='image.png', profile='object.png', description = 'sololo', link= 'https://heroku.com')
+        self.proj1.save()
+
+    def tearDown(self):
+        Profile.objects.all().delete()
+        Rating.objects.all().delete()
+        Projetc.objects.all().delete()
