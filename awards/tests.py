@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Profile, Project, Rating
+from .models import *
 # Create your tests here.
 '''test behaviors'''
 
@@ -10,6 +10,7 @@ class ProfileTestClass(TestCase):
         user_id=5,
         username='codignoramus',
         email='saudababs00@gmail.com')
+
     def test_instance(self):
         self.assertTrue(isinstance(self.prof1, Profile))
 
