@@ -12,7 +12,7 @@ def welcome(request):
 
 def project(request, project_id):
     try:
-        project = Projects.objects.get(id=article_id)
+        project = Projects.objects.get(id=project_id)
         projects = Project.objects.all()
     except DoesNotExist:
         raise Http404()
