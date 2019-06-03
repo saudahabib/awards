@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.contrib.auth.models import User
+from tinymce.models import HTMLField
 # Create your models here.
 class Profile(models.Model):
     user_id=models.IntegerField(default=0)
@@ -26,7 +27,8 @@ class Project(models.Model):
     link = models.CharField(max_length=50)
     def __str__(self):
         return self.title
-
+    class Meta:
+        ordering = ['-id']
 
 
 

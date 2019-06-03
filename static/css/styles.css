@@ -55,21 +55,32 @@ body{
 
 .padawan{
   margin-bottom: 10px;
+
 }
 
 .input{
   padding:9px;
   margin: 29px;
+  width: 80%
+}
+
+.parra{
+  width: 33.33%
 }
 
 .side{
   margin-left: 20px;
   padding: 25px;
   background-color: gray;
+  width: 55%
 }
 
 .rate{
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtzbGOfmNzJtASrgu8VjPjF6YC1iy7S-pfvNaukYHutsh0dWR_');
   padding-top: 20px;
   margin-top: 40px;
+}
+
+.bg-cyan{
+  background-color: #49c5b6
 }
