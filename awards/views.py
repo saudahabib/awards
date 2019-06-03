@@ -3,14 +3,15 @@ from django.http import HttpResponse, Http404
 from .models import Profile, Project, Rating
 from .forms import RatingForm, NewProjectForm
 from django.contrib.auth.decorators import login_required
-
+import random
 # Create your views here.
 '''welcome view to process landing page'''
 @login_required(login_url='/accounts/login/')
 def welcome(request):
     projects = Project.objects.all()
     developers = Profile.objects.all()
-    return render(request, 'home.html', {"projects":projects, "developers": developers})
+    number = random.randrange(10)
+    return render(request, 'home.html', {"projects":projects, "developers": developers, "random":number})
 
 def project(request, project_id):
     try:

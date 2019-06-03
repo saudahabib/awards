@@ -8,27 +8,27 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       {% if user.is_authenticated %}
       <li class="dropdown">
-        <a href="#" class=" btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false">Account
+        <a href="#" class=" btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false"><p>Account</p>
         <span class="caret"></span>
         </a>
           <ul class="dropdown-menu" role="menu"  aria-labelledby="navbarDropdown">
             <li>
-              <a href="{%url 'welcome'%}">Home</a>
+              <a href="{%url 'welcome'%}" class="tudulu" >Home</a>
             </li>
             <li>
-              <a href="{%url 'new-project'%}">Create Article</a>
+              <a href="{%url 'new-project'%} class="tudulu">Create Article</a>
             </li>
             <li>
-              <a href="/accounts/password/change">Change Password</a>
+              <a href="/accounts/password/change" class="tudulu">Change Password</a>
             </li>
             <li>
-              <a href="/logout">Logout</a>
+              <a href="/logout" class="tudulu">Logout</a>
             </li>
           </ul>
         </li>
         {%else%}
         <li>
-          <a class='btn btn-default' href="/accounts/login">Login</a>
+          <a class='btn btn-default' href="/accounts/login" class="tudulu">Login</a>
         </li>
   {% endif %}
 
