@@ -23,7 +23,7 @@ class Project(models.Model):
     landing_page=models.ImageField(upload_to = 'images/', blank = True)
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE)
     description = models.TextField()
-    link = models.CharField(max_length=30)
+    link = models.CharField(max_length=50)
     def __str__(self):
         return self.title
 
