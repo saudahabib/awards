@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5, h6{
 
 body{
   font-family: 'PT Sans', sans-serif;
+  color: yellow;
 }
 
 .opacity{
@@ -44,6 +45,8 @@ body{
 }
 .navbar-brand{
   color: black;
+  font-family: 'Teko', sans-serif;
+  font-size: xx-large;
 }
 .navbar-brand:hover{
   text-decoration: none;
