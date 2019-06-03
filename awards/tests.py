@@ -57,10 +57,14 @@ class ProjectTestClass(TestCase):
         self.rate1 = Rating(design_rate=8, usability_rate=6, content=5)
         self.rate1.save()
 
-        self.proj1 = Project(title= 'sololo', landing_page='image.png', profile='object.png', description = 'sololo', link= 'https://heroku.com')
+        self.proj1 = Project(title= 'sololo', landing_page='image.png', profile=self.prof1, description = 'sololo', link= 'https://heroku.com')
         self.proj1.save()
 
     def tearDown(self):
         Profile.objects.all().delete()
         Rating.objects.all().delete()
-        Projetc.objects.all().delete()
+        Project.objects.all().delete()
+
+    def test_get_projects(self):
+        posts = Project.objects.all()
+        self.assertTrue(len(posts)>0)

@@ -5,6 +5,7 @@ class Profile(models.Model):
     user_id=models.IntegerField(default=0)
     username=models.CharField(max_length=30)
     email=models.CharField(max_length=30, blank=True)
+    profile_pix = models.ImageField(upload_to = 'images/', blank=True)
     def __str__(self):
         return self.username
     '''save profile method'''

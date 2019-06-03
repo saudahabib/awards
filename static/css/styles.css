@@ -5,7 +5,7 @@ h1, h2, h3, h4, h5, h6{
 
 body{
   font-family: 'PT Sans', sans-serif;
-  color: yellow;
+  color: black;
 }
 
 .opacity{
@@ -34,6 +34,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+
 }
 
 .hidden{
