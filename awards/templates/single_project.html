@@ -2,7 +2,7 @@
 {%load bootstrap4%}
 {{block.super}}
 {% block content %}
-
+{%include "navbar.html"%}
   <div class="container">
     <div class="row">
       <div class="column">
@@ -24,7 +24,20 @@
         </div>
 
       </div>
+
+      <div class="card side">
+        <h4>What are your thoughts on {{project.title}}</h4><br>
+        <p class="text-center"><b>(*from 1-10)</b></p>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="" placeholder="Design" class="input"><br><br>
+          <input type="text" name="" value="" placeholder="Usability" class="input"><br><br>
+          <input type="text" name="" value="" placeholder="Content" class="input">
+        </form>
+      </div>
+
     </div>
+
+
   </div>
 
 {%endblock%}
